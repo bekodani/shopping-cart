@@ -26,7 +26,7 @@ function Nav() {
     return(
         <nav>
             <div className="logo">
-                <Link to='/'>
+                <Link to='/shopping-cart'>
                     <img src={logo} alt="logo" />
                 </Link>
             </div>

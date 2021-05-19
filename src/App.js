@@ -16,7 +16,7 @@ function App() {
           <div>
             <Nav />
             <Switch>
-              <Route path='/' exact component={Home}/>         
+              <Route path='/shopping-cart' exact component={Home}/>         
               <Route path="/shop" exact component={CartItems} />
               <Route path="/cart" exact component={Cart} />
               <Route path="/shop/:id" component={ItemDetail}/>

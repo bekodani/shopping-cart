@@ -1,8 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&display=swap");
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+/*   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    sans-serif; */
+    font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -10,4 +13,196 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
+}
+
+.background-wrapper {
+  height: 100vh;
+  background: url('./images/backgrround.jpg');
+  background-size: cover;
+}
+/*-----------------NAV STYLE------------ */
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 10vh;
+  background-color: #11194a;
+}
+
+.nav-links {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+.li-links {
+  color: #5d99f1;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+li:active {
+  color: white;
+}
+
+.item-img {
+  width: 250px;
+}
+
+/* SHOPPING CART STYLES */
+
+.shop-page {
+  padding-top: 10px;
+  background-color: #2b73e2;
+  margin: 0 auto;
+}
+
+.shop-item-container {
+  margin: 10px;
+  padding: 15px;
+  text-align: center;
+  display:inline-block;
+  background: white;
+}
+
+.shop-item-container img{
+  border: 2px solid #11194a;
+  border-radius: 2px;
+  max-width: 100%;
+  max-height: 100%;
+  display: block; /* remove extra space below image */
+}
+
+.page-box {
+  text-align: center;
+}
+
+.item-names {
+  color: #2b73e2;
+}
+
+.item-names:hover {
+  color: #11194a;
+}
+
+.item-price {
+  color: #11194a;
+}
+
+button {
+  padding: 5px;
+  border: none;
+  border-radius: 4px;
+  background-color: #2b73e2;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #11194a;
+  transition: background-color 0.5s;
+}
+
+button:active {
+  transform: scale(1.1);
+}
+
+.addToCart-button {
+  font-weight: 600;
+  color: white;
+}
+.button-wrapper {
+  background-color: rgb(187, 187, 187);
+  padding: 5px;
+  margin: 0 auto;
+}
+.qty-button {
+  background-color: rgba(128, 128, 128, 0);
+}
+.button-wrapper p {
+  display: inline;
+}
+
+.item-detail {
+  text-align: center;
+  width: 85%;
+  margin: 0 auto;
+  margin-top: 25px;
+}
+
+.item-counter {
+  display: inline-block;
+  background-color: white;
+  padding: 5px;
+  width: 25px;
+}
+
+.item-img {
+  margin: 0 auto;
+}
+
+.qty-p {
+  font-weight: 500;
+
+}
+
+.item-detail-btn {
+  margin-left: 25px;
+}
+
+/* ---------------CART------------- */
+
+.container-vert {
+  background-color: #5d99f1;
+  width: 85%;
+}
+
+.container-vert p {
+  display: inline;
+}
+
+.mini-pic {
+  width: 85px;
+}
+
+.cart-item-container {
+  width: 85%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+.cancel-btn {
+  background-color: #5d98f100;
+}
+
+.cart-page {
+  text-align: center;
+}
+
+.summary-box {
+  background-color: gray;
+  width: 25%;
+  display: inline-block;
+}
+
+.cart-item-box {
+  width: 70%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.summary-list {
+  list-style: none;
 }

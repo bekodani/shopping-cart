@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/shopping-cart/static/css/main.adba353d.chunk.css",
+    "main.js": "/shopping-cart/static/js/main.56166a90.chunk.js",
+    "main.js.map": "/shopping-cart/static/js/main.56166a90.chunk.js.map",
+    "runtime-main.js": "/shopping-cart/static/js/runtime-main.2d07c87e.js",
+    "runtime-main.js.map": "/shopping-cart/static/js/runtime-main.2d07c87e.js.map",
+    "static/js/2.fcff74e7.chunk.js": "/shopping-cart/static/js/2.fcff74e7.chunk.js",
+    "static/js/2.fcff74e7.chunk.js.map": "/shopping-cart/static/js/2.fcff74e7.chunk.js.map",
+    "index.html": "/shopping-cart/index.html",
+    "static/css/main.adba353d.chunk.css.map": "/shopping-cart/static/css/main.adba353d.chunk.css.map",
+    "static/js/2.fcff74e7.chunk.js.LICENSE.txt": "/shopping-cart/static/js/2.fcff74e7.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/shopping-cart/static/media/backgrround.1f919844.jpg",
+    "static/media/cap-1.7a575286.png": "/shopping-cart/static/media/cap-1.7a575286.png",
+    "static/media/cap-2.86228b01.png": "/shopping-cart/static/media/cap-2.86228b01.png",
+    "static/media/mug1.72d72f10.png": "/shopping-cart/static/media/mug1.72d72f10.png",
+    "static/media/mug2.96544a77.png": "/shopping-cart/static/media/mug2.96544a77.png",
+    "static/media/photo-frame.0afba5fc.png": "/shopping-cart/static/media/photo-frame.0afba5fc.png",
+    "static/media/photo-frame2.0cbb3986.png": "/shopping-cart/static/media/photo-frame2.0cbb3986.png",
+    "static/media/richmond_logo.4a6c0360.png": "/shopping-cart/static/media/richmond_logo.4a6c0360.png",
+    "static/media/scarf1.99c3dc97.png": "/shopping-cart/static/media/scarf1.99c3dc97.png",
+    "static/media/scarf2.9b22e0f2.png": "/shopping-cart/static/media/scarf2.9b22e0f2.png",
+    "static/media/t-shirt1.06ffadbe.png": "/shopping-cart/static/media/t-shirt1.06ffadbe.png",
+    "static/media/t-shirt2.74bbda82.png": "/shopping-cart/static/media/t-shirt2.74bbda82.png",
+    "static/media/t-shirt3.d96ce221.png": "/shopping-cart/static/media/t-shirt3.d96ce221.png",
+    "static/media/t-shirt4.ac57313a.png": "/shopping-cart/static/media/t-shirt4.ac57313a.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2d07c87e.js",
+    "static/js/2.fcff74e7.chunk.js",
+    "static/css/main.adba353d.chunk.css",
+    "static/js/main.56166a90.chunk.js"
+  ]
+}

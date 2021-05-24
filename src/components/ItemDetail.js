@@ -1,14 +1,47 @@
-import React, {useContext, useState} from 'react';
+import React, {useContext, useState, useCallback} from 'react';
+import {useHistory} from 'react-router-dom';
 import ItemList from './ItemList';
 import {useParams} from "react-router-dom"
 import { CartContext } from './CartContext';
-import { IoMdArrowDropleft, IoMdArrowDropright } from 'react-icons/io'
+import { IoMdArrowDropleft, IoMdArrowDropright } from 'react-icons/io';
+import ShopNav from './ShopNav';
+import { confirmAlert } from 'react-confirm-alert';
+import 'react-confirm-alert/src/react-confirm-alert.css';
 
 const ItemDetail = () => {
     const [cart, setCart] = useContext(CartContext);
     const [numOfItems, setNumOfItems] = useState(1)
     const {id} = useParams()
     const thisItem = ItemList.find(prod => prod.id === id)
+
+    const history = useHistory();
+    const handleOnClick = useCallback(() => history.push('/cart'), [history]);
+  
+    const submit = () => {
+      confirmAlert({
+        title: 'Cart',
+        message: 
+        <div>
+          <hr />
+          <div className="msg-container">
+            <img className="mini-pic" src={thisItem.img} alt={thisItem.name}/>
+            <h3>{thisItem.name} was added to your cart</h3>
+          </div>
+          <hr />
+        </div>,
+  
+        buttons: [
+          {
+            label: 'Continue shopping',
+            onClick: () => {return}
+          },
+          {
+            label: 'Go to Checkout',
+            onClick: () => {handleOnClick()}
+          }
+        ]
+      });
+    };
 
     
     
@@ -25,7 +58,7 @@ const ItemDetail = () => {
       } else {
         setCart([...cart, { id: id, name: name, quantity: numOfItems, price: price, img: img  }]);
       }
-      console.log(cart)
+      submit()
       }
 
       const increment = () => {
@@ -48,11 +81,16 @@ const ItemDetail = () => {
     
 
     return (
-      <div className="item-detail-container">
-        <div className="item-detail">
+      <div>
+      <ShopNav />
+
+      <div className="item-detail-card-container">
+
+        <div className="item-detail-card">
             <h3>{thisItem.name}</h3>      
             <p>{thisItem.desc}</p>
-            <div className="item-img">
+            <hr/>
+            <div>
                 <img src={thisItem.img} alt={thisItem.name}/>
             </div>
             <div className="button-wrapper">
@@ -64,8 +102,9 @@ const ItemDetail = () => {
               <button className="qty-button" onClick={increment}><IoMdArrowDropright style={style}/></button>           
               <button className="item-detail-btn" onClick={()=>addToCartList(thisItem)}>Add to Cart</button>
             </div>
-          </div>
         </div>
+      </div>
+      </div>
     )
 }
 

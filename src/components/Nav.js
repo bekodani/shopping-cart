@@ -24,14 +24,16 @@ function Nav() {
 
 
     return(
-        <nav>
+        <nav className="main-nav">
             <div className="logo">
                 <Link to='/shopping-cart'>
-                    <img src={logo} alt="logo" />
+                    <div className="logo-name">
+                    <img id="logo" className="logo-inline" src={logo} alt="logo" /> <h2 className="logo-inline">AFC Richmond</h2>
+                    </div>
                 </Link>
             </div>
             <ul className="nav-links">
-                <Link to='/shop'>
+                <Link to='/shop/catalog'>
                     <li className="li-links">Shop</li>
                 </Link>
                 <Link className="li-links" to="/cart">

@@ -18,7 +18,7 @@ import away_shorts from '../images/away_shorts.png';
 const ItemList = [
     {
         id: 'afc-mug-logo',
-        name: 'AFC Richmond Mug',
+        name: 'AFC Richmond Mug with',
         desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod',
         price: 9.99,
         type: 'mug',

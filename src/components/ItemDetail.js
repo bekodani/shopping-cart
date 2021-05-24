@@ -7,6 +7,7 @@ import { IoMdArrowDropleft, IoMdArrowDropright } from 'react-icons/io';
 import ShopNav from './ShopNav';
 import { confirmAlert } from 'react-confirm-alert';
 import 'react-confirm-alert/src/react-confirm-alert.css';
+import { Helmet } from 'react-helmet';
 
 const ItemDetail = () => {
     const [cart, setCart] = useContext(CartContext);
@@ -82,6 +83,9 @@ const ItemDetail = () => {
 
     return (
       <div>
+        <Helmet>
+          <title>{thisItem.name}</title>
+        </Helmet>
       <ShopNav />
 
       <div className="item-detail-card-container">

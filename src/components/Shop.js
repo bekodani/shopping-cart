@@ -5,6 +5,7 @@ import { CartContext } from './CartContext';
 import { FaShoppingCart } from 'react-icons/fa';
 import { confirmAlert } from 'react-confirm-alert';
 import 'react-confirm-alert/src/react-confirm-alert.css';
+import { Helmet } from 'react-helmet';
 
 
 
@@ -60,7 +61,11 @@ const Shop = (props) => {
   
   
   return (
+    <>
 
+    <Helmet>
+      <title>{ 'Catalog' }</title>
+    </Helmet>
       <div className="item-card-wrapper" key={props.index}>
         <Link to={`/shop/product/${props.id}`}>
         <div className="img-hover-zoom">
@@ -73,6 +78,7 @@ const Shop = (props) => {
         <h4 className="item-price">£{props.price}</h4>
         <button className="addToCart-button" onClick={()=>addToCartList(props)}><FaShoppingCart /> Add to Cart</button>
       </div>
+      </>
 
   )
 }

@@ -3,6 +3,7 @@ import {CartContext} from './CartContext';
 import {Link} from 'react-router-dom';
 import { IoMdArrowDropleft, IoMdArrowDropright } from 'react-icons/io';
 import { MdCancel } from 'react-icons/md';
+import { Helmet } from 'react-helmet';
 
 
 const Cart = () => {
@@ -48,6 +49,9 @@ const Cart = () => {
 if(cart.length === 0) {
   return(
     <div className="empty-cart">
+              <Helmet>
+            <title>{ 'Cart' }</title>
+        </Helmet>
       <div className="back-to-shop">
         <h2>Your cart is empty</h2> 
         <Link to="/shop/catalog">   
@@ -58,6 +62,10 @@ if(cart.length === 0) {
   )
 } else 
   return (
+    <>
+        <Helmet>
+            <title>{ 'Cart' }</title>
+        </Helmet>
     <div className="cart-page">
       <h3>Cart ({cart.length})</h3>
 
@@ -106,7 +114,8 @@ if(cart.length === 0) {
         <button>Checkout</button>
       </Link>
       </div>
-    </div>    
+    </div>  
+    </>  
   )
 }
 

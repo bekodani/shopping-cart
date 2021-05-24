@@ -1,5 +1,6 @@
 import React, {useContext, useEffect, useState} from 'react';
 import {CartContext} from './CartContext';
+import { Helmet } from 'react-helmet';
 
 
 const Checkout = () => {
@@ -19,6 +20,9 @@ const Checkout = () => {
 
     return (
         <div>
+            <Helmet>
+                <title>{'Checkout'}</title>
+            </Helmet>
             <p>Checking out!!</p>
             {boughtItems.map((item, index) => (
                 <ul key={index}>

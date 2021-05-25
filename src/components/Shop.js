@@ -2,7 +2,7 @@ import {useHistory} from 'react-router-dom';
 import React, { useContext, useCallback } from 'react';
 import {Link} from 'react-router-dom';
 import { CartContext } from './CartContext';
-import { FaShoppingCart } from 'react-icons/fa';
+/* import { FaShoppingCart } from 'react-icons/fa'; */
 import { confirmAlert } from 'react-confirm-alert';
 import 'react-confirm-alert/src/react-confirm-alert.css';
 import { Helmet } from 'react-helmet';
@@ -76,7 +76,7 @@ const Shop = (props) => {
             <h3 className="item-names">{props.name}</h3>
         </Link>
         <h4 className="item-price">£{props.price}</h4>
-        <button className="addToCart-button" onClick={()=>addToCartList(props)}><FaShoppingCart /> Add to Cart</button>
+        <button className="addToCart-button" onClick={()=>addToCartList(props)}>{/* <FaShoppingCart /> */} Add to Cart</button>
       </div>
       </>
 
